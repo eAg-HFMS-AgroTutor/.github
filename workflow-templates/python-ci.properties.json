@@ -1,0 +1,10 @@
+{
+  "name": "Python CI",
+  "description": "Run Ruff linting and Pytest for Python repositories.",
+  "iconName": "python",
+  "categories": [
+    "Python",
+    "Testing",
+    "Continuous integration"
+  ]
+}

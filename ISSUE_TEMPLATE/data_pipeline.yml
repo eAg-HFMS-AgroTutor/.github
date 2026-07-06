@@ -1,0 +1,55 @@
+name: Data pipeline task
+description: Define work for ETL, schemas, metadata, indicators, or data quality.
+title: "data: "
+labels: ["data-pipeline", "needs-triage"]
+body:
+  - type: dropdown
+    id: repository_area
+    attributes:
+      label: Target repository
+      options:
+        - e-agrology
+        - hfms
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Data source
+      description: Source system, owner, access method, and refresh frequency.
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Pipeline objective
+    validations:
+      required: true
+  - type: textarea
+    id: schema
+    attributes:
+      label: Expected input/output schema
+  - type: textarea
+    id: quality
+    attributes:
+      label: Data quality checks
+      placeholder: |
+        - Missing-value rules
+        - Unit validation
+        - Duplicate handling
+        - Range checks
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Metadata requirements
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Pipeline runs successfully
+        - [ ] Tests pass
+        - [ ] Schema documented
+        - [ ] Metadata documented
+    validations:
+      required: true

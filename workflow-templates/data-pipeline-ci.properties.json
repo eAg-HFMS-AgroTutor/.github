@@ -1,0 +1,11 @@
+{
+  "name": "Data Pipeline CI",
+  "description": "Validate Python data pipeline repositories with linting, tests, and minimum documentation checks.",
+  "iconName": "database",
+  "categories": [
+    "Python",
+    "Data",
+    "Testing",
+    "Continuous integration"
+  ]
+}

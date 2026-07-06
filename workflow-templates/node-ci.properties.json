@@ -1,0 +1,11 @@
+{
+  "name": "Node CI",
+  "description": "Run linting, tests, and build for Node/TypeScript repositories.",
+  "iconName": "nodejs",
+  "categories": [
+    "JavaScript",
+    "TypeScript",
+    "Testing",
+    "Continuous integration"
+  ]
+}

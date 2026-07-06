@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible bug.
+title: "fix: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: dropdown
+    id: repository_area
+    attributes:
+      label: Affected area
+      options:
+        - e-agrology
+        - hfms
+        - agrotutor
+        - ai-orchestration
+        - engineering-playbook
+        - .github
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is failing?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or sample data
+      description: Do not include secrets or sensitive data.
